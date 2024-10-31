@@ -1,10 +1,13 @@
 {
+	nixpkgs,
   pkgs,
   username,
   inputs,
   outputs,
   ...
 }: {
+	nixpkgs.config.allowUnfree = true;
+
   programs.zsh.enable = true;
 
   users.users.${username} = {
