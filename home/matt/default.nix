@@ -8,12 +8,8 @@
     git = {
       enable = true;
       lfs.enable = true;
-      extraConfig = {
-        user = {
-          name = "SolarHorizon";
-          email = "matt@solarhorizon.dev";
-        };
-      };
+      userName = "SolarHorizon";
+      userEmail = "matt@solarhorizon.dev";
     };
 
     direnv = {
