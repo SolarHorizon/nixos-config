@@ -1,6 +1,7 @@
 {
   programs.starship = {
     enable = true;
+    enableZshIntegration = true;
     settings = {
       username = {
         format = "[$user](blue)";
@@ -10,6 +11,8 @@
         format = "[@$hostname](blue)";
         ssh_only = false;
       };
+      left_format = "$username$hostname$directory$git_branch$git_commit$git_status$git_state$line_break$character";
+      right_format = "$all\${custom.rojo}";
       custom = {
         rojo = {
           detect_extensions = ["project.json"];
