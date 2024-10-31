@@ -3,6 +3,8 @@
     inputs.nixvim.homeManagerModules.nixvim
   ];
 
+	programs.ripgrep.enable = true;
+
   programs.nixvim = {
     imports = [
       ./config/keymaps.nix
