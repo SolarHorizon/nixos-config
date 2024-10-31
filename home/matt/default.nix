@@ -1,6 +1,7 @@
 {
   imports = [
-    ../../modules/neovim
+    ./neovim
+    ./starship.nix
   ];
 
   programs = {
@@ -26,7 +27,6 @@
       enableCompletion = true;
       syntaxHighlighting.enable = true;
       autosuggestion.enable = true;
-
       shellAliases = {
         ls = "ls --color=auto";
         la = "ls -a";
