@@ -2,6 +2,7 @@
   imports = [
     ./neovim
     ./starship.nix
+    ./1password.nix
   ];
 
   programs = {
