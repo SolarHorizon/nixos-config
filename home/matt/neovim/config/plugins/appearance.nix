@@ -1,7 +1,7 @@
 {
   plugins.indent-blankline = {
     enable = true;
-    settings.scope.enabled = true;
+    settings.scope.enabled = false;
   };
 
   plugins.lualine = {

@@ -1,8 +1,15 @@
-{
+{pkgs, ...}: {
   imports = [
     ./neovim
     ./starship.nix
     ./1password.nix
+  ];
+
+  home.packages = with pkgs; [
+    ripgrep
+    stylua
+    prettierd
+    alejandra
   ];
 
   programs = {
