@@ -14,6 +14,7 @@
       nix
       toml
       yaml
+      just
     ];
   };
 }
