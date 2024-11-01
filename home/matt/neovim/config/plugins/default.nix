@@ -6,5 +6,6 @@
     ./lsp.nix
     ./navigation.nix
     ./treesitter.nix
+    ./tasks
   ];
 }
