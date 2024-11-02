@@ -15,10 +15,11 @@
     defaultEditor = true;
 
     performance = {
-      combinePlugins = {
-        enable = true;
-        standalonePlugins = ["nvim-treesitter"];
-      };
+      # can't use this when conform.nvim and overseer.nvim are both enabled
+      # combinePlugins = {
+      #   enable = true;
+      #   standalonePlugins = ["nvim-treesitter"];
+      # };
       byteCompileLua.enable = true;
     };
 
