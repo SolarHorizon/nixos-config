@@ -8,5 +8,6 @@
     ./treesitter.nix
     ./tasks
     ./scm.nix
+    ./ui.nix
   ];
 }
