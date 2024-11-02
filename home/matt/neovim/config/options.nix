@@ -1,8 +1,8 @@
 {
-  globalOpts = {
-    scrolloff = 4;
-    tabstop = 2;
-    shiftwidth = 2;
+  opts = {
+    scrolloff = 6;
+    tabstop = 4;
+    shiftwidth = 4;
     softtabstop = 0;
     wrap = false;
     splitright = true;
@@ -20,5 +20,34 @@
   };
   globals = {
     mapleader = " ";
+  };
+  files = {
+    "ftplugin/nix.lua" = {
+      opts = {
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    };
+    "ftplugin/javascript.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    };
+    "ftplugin/typescript.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    };
+    "ftplugin/json.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    };
   };
 }
