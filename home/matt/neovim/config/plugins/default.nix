@@ -7,5 +7,6 @@
     ./navigation.nix
     ./treesitter.nix
     ./tasks
+    ./scm.nix
   ];
 }
