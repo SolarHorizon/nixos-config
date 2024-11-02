@@ -7,8 +7,6 @@
 }: {
   nixpkgs.config.allowUnfree = true;
 
-  programs.zsh.enable = true;
-
   users.users.${username} = {
     isNormalUser = true;
     shell = pkgs.zsh;
@@ -22,6 +20,13 @@
     users.${username} = {
       imports = [
         ./${username}
+      ];
+
+      home.packages = with pkgs; [
+        just
+        git
+        zsh
+        direnv
       ];
 
       systemd.user.startServices = "sd-switch";
