@@ -7,6 +7,7 @@
     ../../home
   ];
 
+  networking.hostName = "nomad";
   services.automatic-timezoned.enable = true;
   system.stateVersion = "24.11";
 }

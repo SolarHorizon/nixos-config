@@ -45,9 +45,9 @@
     nixpkgs.config.allowUnfree = true;
 
     nixosConfigurations = {
-      bastion = nixpkgs.lib.nixosSystem {
+      nomad = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit username inputs outputs;};
-        modules = [./systems/bastion];
+        modules = [./systems/nomad];
       };
     };
   };
