@@ -7,11 +7,25 @@
 }: {
   nixpkgs.config.allowUnfree = true;
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableBashCompletion = true;
+    enableCompletion = true;
+    enableLsColors = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      ls = "ls --color=auto";
+      la = "ls -a";
+      ll = "ls -l";
+    };
+  };
 
-  users.users.${username} = {
-    isNormalUser = true;
-    shell = pkgs.zsh;
+  users = {
+    defaultUserShell = pkgs.zsh;
+    users.${username} = {
+      isNormalUser = true;
+    };
   };
 
   home-manager = {
